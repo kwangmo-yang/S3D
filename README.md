@@ -2,7 +2,7 @@
 
 Detailed instructions for running the code are provided in the README files included in each ZIP archive.
 
-`S3d_Matlab.zip`: Python implementation
+`S3D_Matlab.zip`: Python implementation
 `S3D_Python.zip`: MATLAB implementation
 
 Please refer to the corresponding README file inside each archive for setup and execution details.
