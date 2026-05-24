@@ -1,9 +1,10 @@
-# S3D Python
+# S3D
 
-Python tools for optical simulation and spectral analysis of bottom-emitting OLED structures.
+Spectral decomposition-based optical analysis for extracting exciton distribution profiles in bottom-emitting OLEDs.
 
 ## Overview
 
+This repository provides Python scripts and representative datasets for spectral decomposition-based exciton distribution analysis in bottom-emitting OLEDs.
 This repository supports three main workflows:
 
 1. plotting and checking refractive-index / extinction-coefficient (`n`, `k`) data,
@@ -13,7 +14,7 @@ This repository supports three main workflows:
 ## Repository structure
 
 ```text
-S3D_Python/
+S3D/
 ├── config.py                         # Shared simulation configuration dataclass
 ├── core.py                           # Core optical simulation functions
 ├── io_utils.py                       # Data loading, interpolation, and normalization helpers
@@ -31,8 +32,8 @@ S3D_Python/
 Clone the repository and install the required packages:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/S3D_Python.git
-cd S3D_Python
+git clone https://github.com/kwangmo-yang/S3D.git
+cd S3D
 python -m venv .venv
 source .venv/bin/activate  # macOS/Linux
 pip install -r requirements.txt
@@ -86,4 +87,4 @@ python rz_extraction.py
 
 - Scripts assume relative paths from the repository root.
 - `pandas` and `openpyxl` are needed to read spreadsheet-based optical-constant files such as `.xlsx`.
-- Sample `PL`, `EL`, and `nk` files are included for demonstration and reproducibility.
+- Representative `PL`, `EL`, and `nk` files are included to demonstrate the expected input format and support reproducible execution.
